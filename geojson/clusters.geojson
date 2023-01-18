@@ -1,0 +1,75 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cuvier",
+                "northEastLat": "48.4493008",
+                "northEastLon": "2.6508808",
+                "southWestLon": "2.6327276",
+                "southWestLat": "48.4446751"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64028068065,
+                    48.44682433366
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "northEastLat": "48.4406325",
+                "southWestLat": "48.4336142",
+                "northEastLon": "2.6357746",
+                "name": "Apremont",
+                "southWestLon": "2.6195097"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62768502712,
+                    48.43710213254
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "northEastLat": "48.4109511",
+                "southWestLon": "2.5947046",
+                "name": "Franchard",
+                "southWestLat": "48.4071053",
+                "northEastLon": "2.6145744"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60217185497,
+                    48.40903539059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trois Pignons",
+                "northEastLat": "48.3953245",
+                "southWestLon": "2.5083128",
+                "northEastLon": "2.548881",
+                "southWestLat": "48.3586603"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52925855637,
+                    48.37632124000
+                ]
+            }
+        }
+    ]
+}
