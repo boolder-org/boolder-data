@@ -60,6 +60,9 @@ Todo
 
 Recommended tool to view/edit geojson files: [JOSM](https://josm.openstreetmap.de)
 
+<img width="1621" alt="JOSM screenshot" src="https://user-images.githubusercontent.com/330823/213291501-3c9f50c4-a65e-41eb-9099-6e84e5c2e3b0.png">
+
+
 ## Topo photos (beta)
 
 Todo
