@@ -50,7 +50,7 @@ A line is a set of (x,y) coordinates drawn on top of a topo photo to show the (r
 | id                | `INTEGER` | 123                                                                                       | Unique id  |
 | problem_id        | `INTEGER` | 456                                                                                       | Id of the problem  |
 | topo_id           | `INTEGER` | 789                                                                                       | Id of the topo photo  |
-| coordinates       | `TEXT`    | [{"x"=>0.1425, "y"=>0.4483}, {"x"=>0.3025, "y"=>0.4617}, {"x"=>0.4612, "y"=>0.4633}]      | Json array of the (x,y) coordinates, representing a curved line to be drawn on the topo photo  |
+| coordinates       | `TEXT`    | [{"x"=>0.1425, "y"=>0.4483}, {"x"=>0.3025, "y"=>0.4617}, {"x"=>0.4612, "y"=>0.4633}]      | Json array of the (x,y) coordinates (in fraction of width/height), representing a line to be drawn on the topo photo  |
 
 
 
