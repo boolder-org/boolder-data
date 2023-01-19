@@ -39,11 +39,12 @@ A problem is a specific way to climb a boulder.
 
 ### Topos
 
-A topo is a photo of a problem. It is identified by a unique id (`topo_id`)
+A topo is a photo of a problem. It is identified by a unique id (`topo_id`).
+To get the actual photo, check out the [topo photo section](#topo-photos).
 
 ### Lines
 
-A line is a set of (x,y) coordinates drawn on top of a topo photo to show the (rough) path to follow for a given problem.
+A line is a set of (x,y) coordinates drawn on top of a topo photo to show the (rough) path to climb a given problem.
 
 | Column            | Type      | Example                                                                                   | Description   |
 | ---------------   | --------- | -------------                                                                             | ------------- |
@@ -51,7 +52,6 @@ A line is a set of (x,y) coordinates drawn on top of a topo photo to show the (r
 | problem_id        | `INTEGER` | 456                                                                                       | Id of the problem  |
 | topo_id           | `INTEGER` | 789                                                                                       | Id of the topo photo  |
 | coordinates       | `TEXT`    | [{"x"=>0.1425, "y"=>0.4483}, {"x"=>0.3025, "y"=>0.4617}, {"x"=>0.4612, "y"=>0.4633}]      | Json array of the (x,y) coordinates (in fraction of width/height), representing a line to be drawn on the topo photo  |
-
 
 
 ### Areas
@@ -97,23 +97,35 @@ A circuit is a collection of problems that are meant to be climbed in a given or
 | north_east_lat    | `REAL`    | 48.46329620704      | GPS bounds (north east latitude)    |
 | north_east_lon    | `REAL`    | 2.66375597577       | GPS bounds (north east longitude)   |
 
-### Pois
-
-Todo
-
-### Poi_routes
-
-Todo
 
 ## Geojson files
 
-Todo
+In addition to the database, you will find several [GeoJson]([url](https://en.wikipedia.org/wiki/GeoJSON)) files in the `geojson` folder:
+- `problems.geojson`
+- `areas.geojson`
+- `circuits.geojson`
 
 Recommended tool to view/edit geojson files: [JOSM](https://josm.openstreetmap.de)
 
 <img width="1621" alt="JOSM screenshot" src="https://user-images.githubusercontent.com/330823/213291501-3c9f50c4-a65e-41eb-9099-6e84e5c2e3b0.png">
 
 
-## Topo photos (beta)
+## Topo photos
 
-Todo
+Topo photos are not stored in this repository.
+
+Instead, you can access a topo photo via the following endpoint.
+
+```
+https://www.boolder.com/api/v1/topos/{topo_id}
+```
+
+Note: replace `{topo_id}` with the actual topo id.
+
+It will return a json object with a url pointing to a 800x600 jpg photo.
+
+```json
+{"url":"https://boolder.imgix.net/blxu1fv2ygvnazc5l1x2atfo3s75?ixlib=rails-4.2.0\u0026w=800\u0026ar=4%3A3\u0026fit=crop"}
+```
+
+*Careful: this endpoint may break in the future.*
