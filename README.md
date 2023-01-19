@@ -12,9 +12,17 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 ## Database
 
-The `boolder.db` file is an [SQLite](https://en.wikipedia.org/wiki/SQLite) database with the following tables:
+The `boolder.db` file is an [SQLite](https://en.wikipedia.org/wiki/SQLite) database with the following structure:
 
-### Problems
+```mermaid
+classDiagram
+    Problem --> Area
+    Problem <-- Line
+    Line --> Topo
+    Problem --> Circuit
+```
+
+### Problem
 
 A problem is a specific way to climb a boulder.
 
@@ -37,13 +45,13 @@ A problem is a specific way to climb a boulder.
 | parent_id       | `INTEGER` | 1234                | Id of the parent problem (if it exists) |
 
 
-### Topos
+### Topo
 
 A topo is a photo of a problem, identified by a unique id (`topo_id`).
 
-To get the actual photo, check out the [topo photo section](#topo-photos).
+To get the actual photo, check out the [topo photo section](#topo-photo).
 
-### Lines
+### Line
 
 A line is a set of (x,y) coordinates drawn on top of a topo photo to show the (rough) path to climb a given problem.
 
@@ -55,7 +63,7 @@ A line is a set of (x,y) coordinates drawn on top of a topo photo to show the (r
 | coordinates       | `TEXT`    | [{"x"=>0.1425, "y"=>0.4483}, {"x"=>0.3025, "y"=>0.4617}, {"x"=>0.4612, "y"=>0.4633}]      | Json array of the (x,y) coordinates (in fraction of width/height), representing a line to be drawn on the topo photo  |
 
 
-### Areas
+### Area
 
 An area is a geographic zone with problems.
 
@@ -82,7 +90,7 @@ An area is a geographic zone with problems.
 | level8_count    | `INTEGER` | 9                                                         | Number of level 8 problems                           |
 | problems_count  | `INTEGER` | 531                                                       | Number of problems                           |
 
-### Circuits
+### Circuit
 
 A circuit is a collection of problems that are meant to be climbed in a given order.
 
@@ -111,11 +119,11 @@ Recommended tool to view/edit geojson files: [JOSM](https://josm.openstreetmap.d
 <img width="1621" alt="JOSM screenshot" src="https://user-images.githubusercontent.com/330823/213291501-3c9f50c4-a65e-41eb-9099-6e84e5c2e3b0.png">
 
 
-## Topo photos
+## Topo photo
 
 Topo photos are not stored in this repository.
 
-Instead, you can access a topo photo via the following endpoint.
+Instead, you can access a topo photo via the following endpoint:
 
 ```
 https://www.boolder.com/api/v1/topos/{topo_id}
