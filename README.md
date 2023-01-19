@@ -14,33 +14,64 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 The `boolder.db` file is an [SQLite](https://en.wikipedia.org/wiki/SQLite) database with the following tables:
 
-### problems
+### Problems
 
 | Column          | Type      | Example             | Description   |
 | --------------- | --------- | -------------       | ------------- |
-| id              | `INTEGER` | 506                 | Boolder id    |
-| name            | `STRING`  | La Marie-Rose       | Name of the problem |
-| grade           | `STRING`  | 6a                  | [Fontainebleau-style grade](https://en.wikipedia.org/wiki/Grade_(bouldering)#Fontainebleau_grades) from 1a to 9c+ |
+| id              | `INTEGER` | 506                 | Unique id    |
+| name            | `TEXT`    | La Marie-Rose       | Name of the problem |
+| grade           | `TEXT`    | 6a                  | [Fontainebleau-style grade](https://en.wikipedia.org/wiki/Grade_(bouldering)#Fontainebleau_grades) from 1a to 9c+ |
 | latitude        | `REAL`    | 48.44706625262      | GPS latitude |
 | longitude       | `REAL`    | 2.63909882977       | GPS longitude |
-| circuit_id      | `INTEGER` | 15                  | used to join on circuits table |
-| circuit_number  | `TEXT`    | 22                  | number within the circuit |
-| circuit_color   | `TEXT`    | red                 | possible values: yellow purple orange green blue skyblue salmon red black white |
-| steepness       | `TEXT`    | wall                | possible values: wall slab overhang roof traverse other |
+| circuit_id      | `INTEGER` | 15                  | Used to join on circuits table |
+| circuit_number  | `TEXT`    | 22                  | Number within the circuit |
+| circuit_color   | `TEXT`    | red                 | Possible values: yellow purple orange green blue skyblue salmon red black white |
+| steepness       | `TEXT`    | wall                | Possible values: wall slab overhang roof traverse other |
 | sit_start       | `INTEGER` | 1                   | `1` for sit start, `0` for normal start  |
-| area_id         | `INTEGER` | 4                   | used to join on areas table |
+| area_id         | `INTEGER` | 4                   | Used to join on areas table |
 | bleau_info_id   | `INTEGER` | 2128                | Id on bleau.info |
 | featured        | `INTEGER` | 1                   | `1` if problem is "popular", `0` otherwise |
-| popularity      | `INTEGER` | 14923               | the higher the more popular |
-| parent_id       | `INTEGER` | 1234                | id of the parent problem (if it exists) |
+| popularity      | `INTEGER` | 14923               | The higher the more popular |
+| parent_id       | `INTEGER` | 1234                | Id of the parent problem (if it exists) |
 
-### areas
+### Areas
 
-Todo
+| Column          | Type      | Example                                                   | Description   |
+| --------------- | --------- | -------------                                             | ------------- |
+| id              | `INTEGER` | 4                                                         | Unique id  |
+| name            | `TEXT`    | Cuvier                                                    | Name of the area |
+| description_fr  | `TEXT`    | Cuvier est un secteur mythique ...                        | Description in French                           |
+| description_en  | `TEXT`    | Cuvier is one of the most famous areas ...                | Description in English                           |
+| warning_fr      | `TEXT`    | La peinture du circuit orange est presque effacée ...     | Warning in French                           |
+| warning_en      | `TEXT`    | The orange circuit's paint is almost faded ...            | Warning in English                           |
+| tags            | `TEXT`    | popular,beginner_friendly                                 | Tags separated by a comma. Possible values: popular beginner_friendly family_friendly dry_fast |
+| south_west_lat  | `REAL`    | 48.4464022004                                             | GPS bounds (south west latitude)                           |
+| south_west_lon  | `REAL`    | 2.63738594916                                             | GPS bounds (south west longitude)                           |
+| north_east_lat  | `REAL`    | 48.4479009016                                             | GPS bounds (north east latitude)                           |
+| north_east_lon  | `REAL`    | 2.63972684674                                             | GPS bounds (north east longitude)                           |
+| level1_count    | `INTEGER` | 4                                                         | Number of level 1 problems                           |
+| level2_count    | `INTEGER` | 25                                                        | Number of level 2 problems                           |
+| level3_count    | `INTEGER` | 48                                                        | Number of level 3 problems                           |
+| level4_count    | `INTEGER` | 50                                                        | Number of level 4 problems                           |
+| level5_count    | `INTEGER` | 129                                                       | Number of level 5 problems                           |
+| level6_count    | `INTEGER` | 146                                                       | Number of level 6 problems                           |
+| level7_count    | `INTEGER` | 120                                                       | Number of level 7 problems                           |
+| level8_count    | `INTEGER` | 9                                                         | Number of level 8 problems                           |
+| problems_count  | `INTEGER` | 531                                                       | Number of problems                           |
 
 ### circuits
 
-Todo
+| Column            | Type      | Example             | Description   |
+| ---------------   | --------- | -------------       | ------------- |
+| id                | `INTEGER` | 23                  | Unique id  |
+| color             | `TEXT`    | blue                | Possible values: yellow purple orange green blue skyblue salmon red black white  |
+| average_grade     | `TEXT`    | 4a                  | Average grade of the circuit's problems   |
+| beginner_friendly | `INTEGER` | 0                   | `1` if it's beginner friendly (many easy/low boulders), `0` otherwise  |
+| dangerous         | `INTEGER` | 0                   | `1` if it's dangerous (many high/exposed boulders), `0` otherwise |
+| south_west_lat    | `REAL`    | 48.46116370582      | GPS bounds (south west latitude)    |
+| south_west_lon    | `REAL`    | 2.66248113233       | GPS bounds (south west longitude)   |
+| north_east_lat    | `REAL`    | 48.46329620704      | GPS bounds (north east latitude)    |
+| north_east_lon    | `REAL`    | 2.66375597577       | GPS bounds (north east longitude)   |
 
 ### lines
 
