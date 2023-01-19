@@ -138,3 +138,9 @@ It will return a json object with a url pointing to a 800x600 jpg photo.
 ```
 
 *Careful: this endpoint may break in the future.*
+
+## Get in touch
+
+If you have any question, we'd be happy to hear from you!
+
+Drop us a line at hello@boolder.com
