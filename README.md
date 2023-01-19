@@ -39,7 +39,8 @@ A problem is a specific way to climb a boulder.
 
 ### Topos
 
-A topo is a photo of a problem. It is identified by a unique id (`topo_id`).
+A topo is a photo of a problem, identified by a unique id (`topo_id`).
+
 To get the actual photo, check out the [topo photo section](#topo-photos).
 
 ### Lines
