@@ -16,6 +16,8 @@ The `boolder.db` file is an [SQLite](https://en.wikipedia.org/wiki/SQLite) datab
 
 ### Problems
 
+A problem is a specific way to climb a boulder.
+
 | Column          | Type      | Example             | Description   |
 | --------------- | --------- | -------------       | ------------- |
 | id              | `INTEGER` | 506                 | Unique id    |
@@ -34,7 +36,27 @@ The `boolder.db` file is an [SQLite](https://en.wikipedia.org/wiki/SQLite) datab
 | popularity      | `INTEGER` | 14923               | The higher the more popular |
 | parent_id       | `INTEGER` | 1234                | Id of the parent problem (if it exists) |
 
+
+### Topos
+
+A topo is a photo of a problem. It is identified by a unique id (`topo_id`)
+
+### Lines
+
+A line is a set of (x,y) coordinates drawn on top of a topo photo to show the (rough) path to follow for a given problem.
+
+| Column            | Type      | Example                                                                                   | Description   |
+| ---------------   | --------- | -------------                                                                             | ------------- |
+| id                | `INTEGER` | 123                                                                                       | Unique id  |
+| problem_id        | `INTEGER` | 456                                                                                       | Id of the problem  |
+| topo_id           | `INTEGER` | 789                                                                                       | Id of the topo photo  |
+| coordinates       | `TEXT`    | [{"x"=>0.1425, "y"=>0.4483}, {"x"=>0.3025, "y"=>0.4617}, {"x"=>0.4612, "y"=>0.4633}]      | Json array of the (x,y) coordinates, representing a curved line to be drawn on the topo photo  |
+
+
+
 ### Areas
+
+An area is a geographic zone with problems.
 
 | Column          | Type      | Example                                                   | Description   |
 | --------------- | --------- | -------------                                             | ------------- |
@@ -59,7 +81,9 @@ The `boolder.db` file is an [SQLite](https://en.wikipedia.org/wiki/SQLite) datab
 | level8_count    | `INTEGER` | 9                                                         | Number of level 8 problems                           |
 | problems_count  | `INTEGER` | 531                                                       | Number of problems                           |
 
-### circuits
+### Circuits
+
+A circuit is a collection of problems that are meant to be climbed in a given order.
 
 | Column            | Type      | Example             | Description   |
 | ---------------   | --------- | -------------       | ------------- |
@@ -73,15 +97,11 @@ The `boolder.db` file is an [SQLite](https://en.wikipedia.org/wiki/SQLite) datab
 | north_east_lat    | `REAL`    | 48.46329620704      | GPS bounds (north east latitude)    |
 | north_east_lon    | `REAL`    | 2.66375597577       | GPS bounds (north east longitude)   |
 
-### lines
+### Pois
 
 Todo
 
-### pois
-
-Todo
-
-### poi_routes
+### Poi_routes
 
 Todo
 
