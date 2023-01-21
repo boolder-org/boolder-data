@@ -51,7 +51,7 @@ A problem is a specific way to climb a boulder.
 
 A topo is a photo of a problem, identified by a unique id (`topo_id`).
 
-To get the actual photo, check out the [topo photo section](#topo-photo).
+The actual photos are stored in the `topos` folder.
 
 ### Line
 
@@ -120,26 +120,6 @@ Recommended tool to view/edit geojson files: [JOSM](https://josm.openstreetmap.d
 
 <img width="1621" alt="JOSM screenshot" src="https://user-images.githubusercontent.com/330823/213291501-3c9f50c4-a65e-41eb-9099-6e84e5c2e3b0.png">
 
-
-## Topo photo
-
-Topo photos are not stored in this repository.
-
-Instead, you can access a topo photo via the following endpoint:
-
-```
-https://www.boolder.com/api/v1/topos/{topo_id}
-```
-
-Note: replace `{topo_id}` with the actual topo id.
-
-It will return a json object with a url pointing to a 800x600 jpg photo.
-
-```json
-{"url":"https://boolder.imgix.net/blxu1fv2ygvnazc5l1x2atfo3s75?ixlib=rails-4.2.0\u0026w=800\u0026ar=4%3A3\u0026fit=crop"}
-```
-
-*Careful: this endpoint may break in the future.*
 
 ## Get in touch
 
