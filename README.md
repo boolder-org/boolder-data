@@ -4,6 +4,8 @@
 
 Here is the data used by the [Android](https://github.com/boolder-org/boolder-android) and iPhone apps. Feel free to use it as you want!
 
+[About Boolder](https://www.boolder.com/en/about)
+
 ## License
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
