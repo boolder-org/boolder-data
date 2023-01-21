@@ -51,7 +51,9 @@ A problem is a specific way to climb a boulder.
 
 A topo is a photo of a problem, identified by a unique id (`topo_id`).
 
-The actual photos are stored in the `topos` folder.
+The actual photos are stored in the `topos` folder, with a resolution of 800x600.
+
+Note: higher resolutions photos will be available in the future.
 
 ### Line
 
