@@ -2,9 +2,9 @@
 
 [Boolder](https://www.boolder.com) is the best way to discover bouldering in Fontainebleau.
 
-Here is the data used by the [Android](https://github.com/boolder-org/boolder-android) and iPhone apps. Feel free to use it as you want!
+Here is the data used by the [Android](https://github.com/boolder-org/boolder-android) and [iPhone](https://github.com/boolder-org/boolder-ios) apps. Feel free to use it as you want!
 
-[About Boolder](https://www.boolder.com/en/about)
+[More about Boolder](https://www.boolder.com/en/about)
 
 ## License
 
