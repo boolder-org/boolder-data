@@ -32,6 +32,7 @@ A problem is a specific way to climb a boulder.
 | --------------- | --------- | -------------       | ------------- |
 | id              | `INTEGER` | 506                 | Unique id    |
 | name            | `TEXT`    | La Marie-Rose       | Name of the problem |
+| name_en         | `TEXT`    | La Marie-Rose       | Same as name, but falls back to placeholders in English if problem has no name |
 | grade           | `TEXT`    | 6a                  | [Fontainebleau-style grade](https://en.wikipedia.org/wiki/Grade_(bouldering)#Fontainebleau_grades) from 1a to 9c+ |
 | latitude        | `REAL`    | 48.44706625262      | GPS latitude |
 | longitude       | `REAL`    | 2.63909882977       | GPS longitude |
