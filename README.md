@@ -119,6 +119,8 @@ In addition to the database, you will find several [GeoJson]([url](https://en.wi
 - `areas.geojson`
 - `circuits.geojson`
 
+These files contain only the geographic information plus a few basic fields. You need the database to get the rest.
+
 Recommended tool to view/edit geojson files: [JOSM](https://josm.openstreetmap.de)
 
 <img width="1621" alt="JOSM screenshot" src="https://user-images.githubusercontent.com/330823/213291501-3c9f50c4-a65e-41eb-9099-6e84e5c2e3b0.png">
