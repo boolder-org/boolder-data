@@ -78,6 +78,7 @@ An area is a geographic zone with problems.
 | id              | `INTEGER` | 4                                                         | Unique id  |
 | name            | `TEXT`    | Cuvier                                                    | Name of the area |
 | name_searchable | `TEXT`    | cuvier                                                    | Same as name, but with only lowercase accent-free alphanumeric characters (for search purposes) |
+| priority        | `INTEGER` | 1                                                         | Goes from 1 to 3. Useful to show popular areas higher in the search results                           |
 | description_fr  | `TEXT`    | Cuvier est un secteur mythique ...                        | Description in French                           |
 | description_en  | `TEXT`    | Cuvier is one of the most famous areas ...                | Description in English                           |
 | warning_fr      | `TEXT`    | La peinture du circuit orange est presque effacée ...     | Warning in French                           |
