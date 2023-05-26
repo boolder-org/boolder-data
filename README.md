@@ -33,6 +33,7 @@ A problem is a specific way to climb a boulder.
 | id              | `INTEGER` | 506                 | Unique id    |
 | name            | `TEXT`    | La Marie-Rose       | Name of the problem |
 | name_en         | `TEXT`    | La Marie-Rose       | Same as name, but falls back to placeholders in English if problem has no name |
+| name_searchable | `TEXT`    | lamarierose         | Same as name, but with only lowercase accent-free alphanumeric characters (for search purposes) |
 | grade           | `TEXT`    | 6a                  | [Fontainebleau-style grade](https://en.wikipedia.org/wiki/Grade_(bouldering)#Fontainebleau_grades) from 1a to 9c+ |
 | latitude        | `REAL`    | 48.44706625262      | GPS latitude |
 | longitude       | `REAL`    | 2.63909882977       | GPS longitude |
@@ -76,6 +77,7 @@ An area is a geographic zone with problems.
 | --------------- | --------- | -------------                                             | ------------- |
 | id              | `INTEGER` | 4                                                         | Unique id  |
 | name            | `TEXT`    | Cuvier                                                    | Name of the area |
+| name_searchable | `TEXT`    | cuvier                                                    | Same as name, but with only lowercase accent-free alphanumeric characters (for search purposes) |
 | description_fr  | `TEXT`    | Cuvier est un secteur mythique ...                        | Description in French                           |
 | description_en  | `TEXT`    | Cuvier is one of the most famous areas ...                | Description in English                           |
 | warning_fr      | `TEXT`    | La peinture du circuit orange est presque effacée ...     | Warning in French                           |
