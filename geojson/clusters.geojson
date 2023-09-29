@@ -6,34 +6,17 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Cuvier",
-                "northEastLat": "48.4493008",
-                "northEastLon": "2.6508808",
-                "southWestLon": "2.6327276",
-                "southWestLat": "48.4446751"
+                "name": "Trois Pignons",
+                "northEastLat": "48.3953245",
+                "southWestLon": "2.5083128",
+                "northEastLon": "2.548881",
+                "southWestLat": "48.3586603"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.64028068065,
-                    48.44682433366
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "northEastLat": "48.4406325",
-                "southWestLat": "48.4336142",
-                "northEastLon": "2.6357746",
-                "name": "Apremont",
-                "southWestLon": "2.6195097"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.62768502712,
-                    48.43710213254
+                    2.52925855637,
+                    48.37632124000
                 ]
             }
         },
@@ -57,17 +40,51 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Trois Pignons",
-                "northEastLat": "48.3953245",
-                "southWestLon": "2.5083128",
-                "northEastLon": "2.548881",
-                "southWestLat": "48.3586603"
+                "name": "Buthiers",
+                "northEastLat": "48.2964707",
+                "northEastLon": "2.4426555",
+                "southWestLat": "48.2910458",
+                "southWestLon": "2.427206"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.52925855637,
-                    48.37632124000
+                    2.43445868969,
+                    48.29390104678
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "northEastLat": "48.4406325",
+                "southWestLon": "2.6195097",
+                "northEastLon": "2.6357746",
+                "southWestLat": "48.4336142",
+                "name": "Apremont"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62768502712,
+                    48.43710213254
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cuvier",
+                "northEastLon": "2.6508808",
+                "southWestLon": "2.6327276",
+                "northEastLat": "48.4493008",
+                "southWestLat": "48.4446751"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64028068065,
+                    48.44682433366
                 ]
             }
         }
