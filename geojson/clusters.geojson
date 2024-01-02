@@ -6,23 +6,6 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Trois Pignons",
-                "northEastLat": "48.3953245",
-                "southWestLon": "2.5083128",
-                "northEastLon": "2.548881",
-                "southWestLat": "48.3586603"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.52925855637,
-                    48.37632124000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "northEastLat": "48.4109511",
                 "southWestLon": "2.5947046",
                 "name": "Franchard",
@@ -40,11 +23,11 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Buthiers",
-                "northEastLat": "48.2964707",
+                "southWestLon": "2.427206",
                 "northEastLon": "2.4426555",
-                "southWestLat": "48.2910458",
-                "southWestLon": "2.427206"
+                "northEastLat": "48.2964707",
+                "name": "Buthiers",
+                "southWestLat": "48.2910458"
             },
             "geometry": {
                 "type": "Point",
@@ -58,8 +41,8 @@
             "type": "Feature",
             "properties": {
                 "northEastLat": "48.4406325",
-                "southWestLon": "2.6195097",
                 "northEastLon": "2.6357746",
+                "southWestLon": "2.6195097",
                 "southWestLat": "48.4336142",
                 "name": "Apremont"
             },
@@ -85,6 +68,40 @@
                 "coordinates": [
                     2.64028068065,
                     48.44682433366
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "southWestLon": "2.4683618",
+                "northEastLon": "2.4815583",
+                "northEastLat": "48.5048057",
+                "name": "Beauvais",
+                "southWestLat": "48.4995167"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.47469184637,
+                    48.50226078467
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trois Pignons",
+                "northEastLat": "48.3953245",
+                "southWestLon": "2.5083128",
+                "northEastLon": "2.548881",
+                "southWestLat": "48.3586603"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52925855637,
+                    48.37632124000
                 ]
             }
         }
