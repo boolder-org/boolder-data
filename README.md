@@ -2,9 +2,13 @@
 
 [Boolder](https://www.boolder.com) is the best way to discover bouldering in Fontainebleau.
 
-Here is the data used by the [Android](https://github.com/boolder-org/boolder-android) and [iPhone](https://github.com/boolder-org/boolder-ios) apps. Feel free to use it as you want!
+This repo is the data used by the [Android](https://github.com/boolder-org/boolder-android) and [iPhone](https://github.com/boolder-org/boolder-ios) apps. Feel free to use it as you want!
 
 [More about Boolder](https://www.boolder.com/en/about)
+
+## Contribute
+
+If you want to add new data or report a mistake, check out https://www.boolder.com/en/contribute
 
 ## License
 
@@ -127,7 +131,6 @@ These files contain only the geographic information plus a few basic fields. You
 Recommended tool to view/edit geojson files: [JOSM](https://josm.openstreetmap.de)
 
 <img width="1621" alt="JOSM screenshot" src="https://user-images.githubusercontent.com/330823/213291501-3c9f50c4-a65e-41eb-9099-6e84e5c2e3b0.png">
-
 
 ## Get in touch
 
