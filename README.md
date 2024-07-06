@@ -24,6 +24,7 @@ The `boolder.db` file is an [SQLite](https://en.wikipedia.org/wiki/SQLite) datab
 classDiagram
     Problem --> Area
     Problem <-- Line
+    Area --> Cluster
     Line --> Topo
     Problem --> Circuit
 ```
@@ -101,6 +102,18 @@ An area is a geographic zone with problems.
 | level7_count    | `INTEGER` | 120                                                       | Number of level 7 problems                           |
 | level8_count    | `INTEGER` | 9                                                         | Number of level 8 problems                           |
 | problems_count  | `INTEGER` | 531                                                       | Number of problems                           |
+| cluster_id      | `INTEGER` | 2                                                         | Id of the cluster the area belongs to                           |
+| download_size   | `REAL`    | 42                                                        | Size of the photos download in MB                           |
+
+### Cluster
+
+A cluster is a group of areas that are walking distance between each other.
+
+| Column          | Type      | Example                                                   | Description   |
+| --------------- | --------- | -------------                                             | ------------- |
+| id              | `INTEGER` | 2                                                         | Unique id  |
+| name            | `TEXT`    | Franchard                                                 | Name of the cluster |
+| main_area_id    | `INTEGER` | 5                                                         | Id of the area that is considered the center of the cluster  |
 
 ### Circuit
 
@@ -124,6 +137,7 @@ A circuit is a collection of problems that are meant to be climbed in a given or
 In addition to the database, you will find several [GeoJson]([url](https://en.wikipedia.org/wiki/GeoJSON)) files in the `geojson` folder:
 - `problems.geojson`
 - `areas.geojson`
+- `clusters.geojson`
 - `circuits.geojson`
 
 These files contain only the geographic information plus a few basic fields. You need the database to get the rest.
