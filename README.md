@@ -56,11 +56,13 @@ A problem is a specific way to climb a boulder.
 
 ### Topo
 
-A topo is a photo of a problem, identified by a unique id (`topo_id`).
+A topo is a photo of a boulder, identified by a unique id (`topo_id`).
 
-The actual photos are stored in the `topos` folder, with a resolution of 800x600.
+The actual photos are accessible via the url `https://assets.boolder.com/proxy/topos/topo_id`, with a resolution of 800x600.
 
-Note: higher resolutions photos will be available in the future.
+Replace `topo_id` with the actual `topo_id`, eg. [https://assets.boolder.com/proxy/topos/3846]([url](https://assets.boolder.com/proxy/topos/3846))
+
+Note: ping us if you want access to higher-resolution photos.
 
 ### Line
 
