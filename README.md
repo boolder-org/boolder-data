@@ -60,7 +60,7 @@ A topo is a photo of a boulder, identified by a unique id (`topo_id`).
 
 The actual photos are accessible via the url `https://assets.boolder.com/proxy/topos/topo_id`, with a resolution of 800x600.
 
-Replace `topo_id` with the actual `topo_id`, eg. [https://assets.boolder.com/proxy/topos/3846]([url](https://assets.boolder.com/proxy/topos/3846))
+Replace `topo_id` with the actual `topo_id`, eg. [https://assets.boolder.com/proxy/topos/3846](https://assets.boolder.com/proxy/topos/3846)
 
 Note: ping us if you want access to higher-resolution photos.
 
